@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnitConverter</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>
+          Unit
+          <small>Converter</small>
+        </h2>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tab"><!-- filled through javascript --></div>
+      <div class="page-content">
+        <form action="">
+          <div>
+            <label for="from">From:</label>
+            <input
+              type="number"
+              id="from"
+              autocomplete="off"
+              oninput="convert()"
+              step="any"
+            />
+          </div>
+          <div>
+            <label for="to">To:</label>
+            <input
+              type="number"
+              id="to"
+              autocomplete="off"
+              step="any"
+              readonly
+            />
+          </div>
+        </form>
+
+        <div>
+          <select name="units1" id="units1" size="11">
+            <option value="0" selected>Meter</option>
+            <option value="1">Kilometer</option>
+            <option value="2">Centimenter</option>
+            <option value="3">Milimenter</option>
+            <option value="4">Micromenter</option>
+            <option value="5">Nanometer</option>
+            <option value="6">Mile</option>
+            <option value="7">Yard</option>
+            <option value="8">Foot</option>
+            <option value="9">Inch</option>
+            <option value="10">Light Year</option>
+          </select>
+          <select name="units2" id="units2" size="11">
+            <option value="0">Meter</option>
+            <option value="1" selected>Kilometer</option>
+            <option value="2">Centimenter</option>
+            <option value="3">Milimenter</option>
+            <option value="4">Micromenter</option>
+            <option value="5">Nanometer</option>
+            <option value="6">Mile</option>
+            <option value="7">Yard</option>
+            <option value="8">Foot</option>
+            <option value="9">Inch</option>
+            <option value="10">Light Year</option>
+          </select>
+        </div>
+
+        <div id="resultContainer" hidden>
+          <small>Resultado:</small>
+          <span id="resultParagraph">1 kilometer = 0.5 meters</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+    <!-- <script type="module" src="scripts/lengthConverter.js"></script> -->
+  </body>
+</html>

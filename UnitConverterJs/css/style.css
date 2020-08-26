@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  outline: none;
+
+  font-family: "Poppins", sans-serif;
+}
+
+header nav {
+  min-height: 6vh;
+
+  padding: 1rem 5rem;
+  margin-bottom: 1rem;
+
+  border-bottom: 1px solid lightgray;
+  background: #279183;
+
+  color: white;
+}
+
+header nav h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  display: flex;
+  user-select: none;
+}
+
+header nav h2 small {
+  font-size: inherit;
+  font-weight: 700;
+
+  color: #6ed8ca;
+  user-select: none;
+}
+
+main {
+  padding: 0.7rem;
+
+  max-width: 45vw;
+  margin: auto;
+}
+
+main .tab {
+  margin-bottom: -1px;
+}
+
+main .tab .tab-links:first-child {
+  margin-left: 0;
+}
+
+main .tab .tab-links {
+  padding: 0.7rem;
+  margin: 0 0.15rem;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  border: none;
+  background: #279183;
+  color: white;
+
+  user-select: none;
+
+  transition: all 0.3s ease;
+}
+
+main .tab .tab-links:hover {
+  background: #33c1ae;
+}
+
+main .tab .active {
+  color: #279183;
+  background: #fcfcfc;
+
+  border: 1px solid #9ee5dc;
+  border-bottom: 0;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+main .tab .active:hover {
+  color: #279183;
+  background: white;
+}
+
+main .page-content {
+  border: 0.2px solid #9ee5dc;
+  background: #fcfcfc;
+
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main form {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+main form div {
+  margin-right: 1.5rem;
+}
+
+main form div label {
+  font-size: 1.1rem;
+
+  display: block;
+
+  margin-bottom: 0.3rem;
+}
+
+main form div input {
+  height: 2.6rem;
+  width: 22rem;
+
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  font-size: 1.3rem;
+
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+
+  transition: all 0.2s ease;
+}
+
+main form div input:focus {
+  border: 1.5px solid rgb(48, 48, 48);
+}
+
+/* Remove arrows from number input */
+main form div input::-webkit-outer-spin-button,
+main form div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main select {
+  overflow: auto;
+
+  border: 1px solid rgb(153, 151, 151);
+  border-radius: 0.5rem;
+
+  font-size: 1.1rem;
+
+  width: 22rem;
+
+  margin-right: 1.3rem;
+  padding: 0.8rem 0.5rem;
+
+  transition: all 0.2s ease;
+}
+
+main select option {
+  font-size: 1.2rem;
+
+  padding: 0.25rem;
+}
+
+main #resultContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+main #resultContainer small {
+  color: red;
+
+  margin-right: 0.3rem;
+}
